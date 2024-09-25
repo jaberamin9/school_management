@@ -1,1 +1,1 @@
-![Uploading Screenshot 2024-09-26 013307.png…]()
+![https://github.com/jaberamin9/school_management/blob/master/images/demo.png]()
