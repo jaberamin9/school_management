@@ -1,0 +1,155 @@
+.wrapper{
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 30px 30px 10px 30px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  margin: auto;
+}
+.wrapper h2{
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid #009879;
+    text-transform: uppercase;
+    color: #000;
+    padding-bottom: 7px;
+}
+
+.wrapper form{
+  margin-top: 30px;
+}
+.wrapper form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #009879;
+}
+form .policy{
+  display: flex;
+  align-items: center;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #009879;
+  cursor: pointer;
+}
+.input-box.button input:hover{
+  background: #3abda2;
+}
+
+
+.container_piker{
+  position: relative;
+  place-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.container_piker .wrapper_piker{
+    position: relative;
+    height: 200px;
+    border-radius: 10px;
+    background: #fff;
+    border: 2px dashed #c2cdda;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.wrapper_piker.active{
+  border: none;
+}
+.wrapper_piker.active .image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper_piker.active img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper_piker .image{
+  display: none;
+}
+
+.wrapper_piker .icon{
+  font-size: 50px;
+  color: #009879;
+}
+.wrapper_piker .text{
+  font-size: 16px;
+  font-weight: 500;
+  color: #5B5B7B;
+}
+.wrapper_piker #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #9658fe;
+  cursor: pointer;
+  display: none;
+}
+.wrapper_piker.active:hover #cancel-btn i{
+  display: block;
+}
+.wrapper_piker #cancel-btn i:hover{
+  color: #e74c3c;
+}
+.wrapper_piker .file-name{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 11px;
+    color: #fff;
+    display: none;
+    background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
+}
+.wrapper_piker.active:hover .file-name{
+  display: block;
+}
+.wrapper_piker #button{
+    margin-top: 10px;
+    width: 140px;
+    height: 36px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #009879;
+    margin-bottom: 10px;
+}

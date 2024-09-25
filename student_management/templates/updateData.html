@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Data</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'css/updateData.css' %}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <h2>Update</h2>
+    <form action="{% url 'updateData' key%}" method="post" enctype="multipart/form-data">{% csrf_token %}
+        <div class="input-box">
+            <input name="name" type="text" placeholder="Name" value="{{name}}" required>
+        </div>
+        {%if ch == 1 %}
+        <div class="input-box">
+            <input name="des" type="text" placeholder="Description" value="{{des}}" required>
+        </div>
+        {% endif %}
+        <div class="container_piker">
+            <div class="wrapper_piker">
+                <div class="image">
+                    <img src="{{ url }}" alt="">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <div class="text">
+                        No file chosen, yet!
+                    </div>
+                </div>
+                <div id="cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="file-name">
+                    File name here
+                </div>
+                <!--                        <input type="hidden" name="url" id="url" required>-->
+                <button id="button" type="button">Choose a file</button>
+                <input name="url" id="btn" type="file" hidden>
+                <input name="url1" id="btn1" type="text" hidden>
+                <input name="fu" type="text" value="fu" hidden>
+            </div>
+        </div>
+        <input name="page" value="{{page}}" type="text" hidden>
+        <div class="input-box button">
+            <input name="Submit" type="Submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+<script src="{%static 'js/ficker.js' %}"></script>
+</body>
+</html>
